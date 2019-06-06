@@ -50,9 +50,11 @@
   margin: 0;
   height: inherit;
 }
-.main-header__top-navigation>ul>li>a>span{
+
+.main-header__top-navigation>ul>li>a>span {
   margin-right: 10px;
 }
+
 .main-header__top-navigation>ul {
   padding: 0;
   margin: 0;
@@ -76,9 +78,11 @@
   height: inherit;
   padding: 0 22px;
 }
-.main-header__top-navigation>ul>li>a:hover{
+
+.main-header__top-navigation>ul>li>a:hover {
   background-color: #fafafa;
 }
+
 .main-header__top-navigation>ul>li:first-child {
   border-left: 1px solid var(--light-gray-color);
 }
