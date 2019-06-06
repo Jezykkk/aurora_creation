@@ -35,3 +35,24 @@
   .main-header__bottom-navigation-li:hover{
     color: var(--dark-pink-color);
   }
+  
+  .main-header__nav-icon{
+    cursor: pointer;
+    text-align: right;
+    display: none;
+  }
+  .main-header__nav-icon:hover > img{
+    filter: none;
+    -webkit-filter: none;
+}
+  .main-header__nav-icon > img{
+    border: 1px solid var(--light-gray-color);
+    padding: 5px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}

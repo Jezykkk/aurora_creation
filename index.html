@@ -12,6 +12,7 @@
   <link rel="stylesheet" type="text/css" href="src/css/media-queries.css">
   <link rel="stylesheet" type="text/css"
     href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext">
+  <script type="text/javascript" src="src/js/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -20,15 +21,18 @@
     <div class="main-header__top-bar">
       <div class="main-header__container">
         <address class="main-header__address">
-          <a href="tel:293939098"><i class="main-header__icons main-header__phone-icon"></i> <span>293 939
+          <a href="tel:293939098" title="293 939 098"><i class="main-header__icons main-header__phone-icon"></i>
+            <span>293 939
               098</span></a>
-          <a href="mailto:kontakt@aurorabox.pl"><i
+          <a href="mailto:kontakt@aurorabox.pl" title="kontakt@aurorabox.pl"><i
               class="main-header__icons main-header__envelope-icon"></i><span>kontakt@aurorabox.pl</span></a>
         </address>
         <nav class="main-header__navigation main-header__top-navigation">
           <ul>
-            <li><a href="#"><i class="main-header__icons main-header__lock-icon"></i><span>Zaloguj się</span></a></li>
-            <li><a href="#"><i class="main-header__icons main-header__register-icon"></i><span>Załóż konto</span></a>
+            <li><a href="#" title="Zaloguj się"><i class="main-header__icons main-header__lock-icon"></i><span>Zaloguj
+                  się</span></a></li>
+            <li><a href="#" title="Załóż konto"><i class="main-header__icons main-header__register-icon"></i><span>Załóż
+                  konto</span></a>
             </li>
           </ul>
         </nav>
@@ -52,6 +56,7 @@
     <div>
       <div class="main-header__container">
         <nav class="main-header__navigation main-header__bottom-navigation">
+          <a href="#" class="main-header__nav-icon"><img src="src/img/hamburger-icon.png" /></a>
           <ul>
             <li class="main-header__bottom-navigation-li"><a href="#">Kategorie</a></li>
             <li class="main-header__bottom-navigation-li"><a href="#">Nowości</a></li>
@@ -71,3 +76,8 @@
 </body>
 
 </html>
+<script>
+  $(".main-header__nav-icon").on("click", (e) => {
+    $(".main-header__bottom-navigation > ul").toggle();
+  });
+</script>

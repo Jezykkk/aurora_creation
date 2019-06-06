@@ -1,6 +1,6 @@
-:root { 
+:root {
   /* this will not work on IE11 - I had to choose between using css variables and looking similar on all metioned browsers */
-  --dark-pink-color: #eb316b; 
+  --dark-pink-color: #eb316b;
   --light-pink-color: #ecc7d0;
   --light-gray-color: #d3d3d3;
   --main-font-family: 'Lato', sans-serif;
@@ -16,6 +16,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
   color: #eb316b;
   color: var(--dark-pink-color);

@@ -28,4 +28,10 @@
     .main-header__middle-section {
         border-bottom: 1px solid #f0f0f0;
     }
+    .main-header__nav-icon{
+        display: inline-block;
+    }
+    .main-header__bottom-navigation > ul{
+        display: none;
+      }
 }
